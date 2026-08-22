@@ -1,0 +1,54 @@
+{%- assign p = include.project -%}
+
+{%- if p.placeholder -%}
+
+  <li class="card card--empty">
+    <p class="card-empty-mark" aria-hidden="true">+</p>
+    <p class="card-empty-text">
+      Open slot{% if p.hint %} — {{ p.hint }}{% endif %}
+      <span class="card-empty-how">add it in <code>_data/projects.yml</code></span>
+    </p>
+  </li>
+
+{%- else -%}
+
+  <li class="card">
+    <div class="card-head">
+      <h3 class="card-title">{{ p.title }}</h3>
+      {%- if p.year %}<span class="card-year">{{ p.year }}</span>{% endif -%}
+    </div>
+
+    <p class="card-summary">{{ p.summary }}</p>
+
+    {%- if p.details %}
+      <p class="card-details">{{ p.details }}</p>
+    {%- endif -%}
+
+    {%- if p.tags %}
+      <ul class="tags">
+        {%- for tag in p.tags %}
+          <li class="tag" data-tag="{{ tag }}"><span class="tag-hash" aria-hidden="true">#</span>{{ tag }}</li>
+        {%- endfor %}
+      </ul>
+    {%- endif -%}
+
+    {%- if p.learned %}
+      <p class="card-learned"><span class="card-learned-label">learned</span> {{ p.learned }}</p>
+    {%- endif -%}
+
+    {%- assign shown = 0 -%}
+    {%- for l in p.links -%}{%- if l.url != "" and l.url -%}{%- assign shown = shown | plus: 1 -%}{%- endif -%}{%- endfor -%}
+
+    {%- if shown > 0 %}
+      <p class="card-links">
+        {%- for l in p.links -%}
+          {%- if l.url == "" or l.url == nil -%}{%- continue -%}{%- endif -%}
+          <a href="{{ l.url }}" rel="noopener">{{ l.label }} <span aria-hidden="true">&rarr;</span></a>
+        {%- endfor -%}
+      </p>
+    {%- elsif p.links %}
+      <p class="card-links card-links--empty">links pending <span class="link-note" aria-hidden="true">[FILL IN]</span></p>
+    {%- endif -%}
+  </li>
+
+{%- endif -%}

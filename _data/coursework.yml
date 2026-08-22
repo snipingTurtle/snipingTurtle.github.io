@@ -1,0 +1,24 @@
+# ---------------------------------------------------------------
+# COURSEWORK — framed as skills, not a transcript.
+# Keep it to 4–6 entries; cut the ones that stop being relevant.
+#
+#   - skill:  what you can actually do
+#     course: the course it came from
+# ---------------------------------------------------------------
+
+- skill: "Reasoning about algorithms and their complexity"
+  course: "Data Structures & Algorithms"
+
+- skill: "Modelling uncertainty — distributions, estimation, hypothesis testing"
+  course: "Probability & Statistics"
+
+- skill: "Building from gates up: combinational and sequential circuits"
+  course: "Digital Logic Design"
+
+- skill: "Requirements gathering, UML modelling, Agile delivery"
+  course: "System Analysis & Design"
+
+- skill: "Designing class hierarchies that survive a change in requirements"
+  course: "Object Oriented Programming"
+
+# [FILL IN] — add or swap courses as you finish them.

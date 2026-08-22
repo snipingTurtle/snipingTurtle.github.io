@@ -1,0 +1,15 @@
+<header class="masthead">
+  <a class="brand" href="{{ '/' | relative_url }}">
+    <span class="brand-path">~/</span>{{ site.author.name | downcase }}
+  </a>
+
+  <nav class="nav" aria-label="Main">
+    <a href="{{ '/#about' | relative_url }}">about</a>
+    <a href="{{ '/#projects' | relative_url }}">projects</a>
+    <a href="{{ '/notes/' | relative_url }}">notes</a>
+    <a href="{{ '/#contact' | relative_url }}">contact</a>
+    <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch to light theme">
+      <span class="theme-glyph" aria-hidden="true"></span>
+    </button>
+  </nav>
+</header>

@@ -1,0 +1,40 @@
+# ---------------------------------------------------------------
+# Site config. GitHub Pages reads this and builds the site for you.
+# ---------------------------------------------------------------
+
+title: "Seiya"
+tagline: "CSE undergrad at IUT — competitive programming & cybersecurity"
+description: "Personal site of Seiya, a Computer Science and Engineering undergraduate at Islamic University of Technology. Projects, notes, and competitive programming write-ups."
+
+# URL settings ---------------------------------------------------
+# If the repo is named  <username>.github.io  -> leave baseurl empty.
+# If the repo is named anything else (e.g. "portfolio")
+#   -> set baseurl: "/portfolio"
+url: "https://YOUR_GITHUB_USERNAME.github.io"   # [FILL IN]
+baseurl: ""
+
+# Identity -------------------------------------------------------
+author:
+  name: "Seiya"
+  role: "Computer Science & Engineering undergraduate"
+  institution: "Islamic University of Technology (IUT)"
+  semester: "4th semester"
+  initials: "S"          # used by the placeholder avatar
+  # Swap the initials avatar for a real photo:
+  # drop the file in assets/img/ and set the path below, e.g. "/assets/img/me.jpg"
+  photo: ""
+
+# Build ----------------------------------------------------------
+permalink: /notes/:title/
+markdown: kramdown
+highlighter: rouge
+timezone: Asia/Dhaka
+
+plugins:
+  - jekyll-feed        # generates /feed.xml — supported by GitHub Pages by default
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor

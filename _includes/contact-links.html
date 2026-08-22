@@ -1,0 +1,30 @@
+{%- comment -%}
+  Renders site.data.social.
+  include.style = "inline" (hero row) or "list" (footer, shows handles)
+{%- endcomment -%}
+
+<ul class="links links--{{ include.style | default: 'inline' }}">
+  {%- for item in site.data.social -%}
+    {%- if item.url == nil or item.url == "" -%}{%- continue -%}{%- endif -%}
+
+    {%- assign unfilled = false -%}
+    {%- if item.url contains "YOUR_" or item.url contains "FILL" -%}
+      {%- assign unfilled = true -%}
+    {%- endif -%}
+
+    <li>
+      {%- if unfilled -%}
+        <span class="link is-unfilled" title="Add this in _data/social.yml">
+          {{ item.label }}<span class="link-note" aria-hidden="true">[FILL IN]</span>
+        </span>
+      {%- else -%}
+        <a class="link" href="{{ item.url }}"{% unless item.url contains "mailto:" %} rel="me noopener"{% endunless %}>
+          {{ item.label }}
+          {%- if include.style == "list" and item.handle != "" and item.handle %}
+            <span class="link-handle">{{ item.handle }}</span>
+          {%- endif -%}
+        </a>
+      {%- endif -%}
+    </li>
+  {%- endfor -%}
+</ul>

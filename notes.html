@@ -1,0 +1,32 @@
+---
+layout: default
+title: notes
+permalink: /notes/
+description: "Write-ups on solved problems, cybersecurity learning, and project retrospectives."
+---
+
+<section class="section section--top">
+  <h1 class="page-title"><span class="sec-mark" aria-hidden="true">//</span>notes</h1>
+  <p class="sec-note">Problems I worked through, things I read, and what I got wrong the first time.</p>
+
+  {%- if site.posts.size > 0 %}
+    <ul class="post-list">
+      {%- for post in site.posts %}
+        <li class="post-item">
+          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+          <time class="post-date" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%d %b %Y" }}</time>
+          <p class="post-excerpt">{{ post.description | default: post.excerpt | strip_html | truncate: 160 }}</p>
+          {%- if post.tags and post.tags.size > 0 %}
+            <ul class="tags">
+              {%- for tag in post.tags %}
+                <li class="tag" data-tag="{{ tag }}"><span class="tag-hash" aria-hidden="true">#</span>{{ tag }}</li>
+              {%- endfor %}
+            </ul>
+          {%- endif %}
+        </li>
+      {%- endfor %}
+    </ul>
+  {%- else %}
+    <p class="empty-state">No notes yet. Add a Markdown file to <code>_posts/</code> to start.</p>
+  {%- endif %}
+</section>

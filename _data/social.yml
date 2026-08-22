@@ -1,0 +1,40 @@
+# ---------------------------------------------------------------
+# CONTACT LINKS — used in both the hero and the footer.
+#
+# Rules the templates follow:
+#   url: ""                     -> the entry is hidden completely
+#   url contains YOUR_ or FILL  -> shown dimmed as an unfilled placeholder
+#                                  (so you can see what's still missing)
+#   anything else               -> a real link
+#
+# Order here is the order on the page.
+# ---------------------------------------------------------------
+
+- label: "email"
+  url: "mailto:[YOUR_EMAIL_HERE]"
+  handle: "[YOUR_EMAIL_HERE]"
+
+- label: "github"
+  url: "[YOUR_GITHUB_URL_HERE]"
+  handle: "[YOUR_GITHUB_HANDLE]"
+
+- label: "linkedin"
+  url: "[YOUR_LINKEDIN_URL_HERE]"
+  handle: "[YOUR_NAME]"
+
+# --- optional. Leave url empty to hide. ---
+- label: "codeforces"
+  url: ""
+  handle: ""
+
+- label: "leetcode"
+  url: ""
+  handle: ""
+
+- label: "x"
+  url: ""
+  handle: ""
+
+- label: "discord"
+  url: ""
+  handle: ""

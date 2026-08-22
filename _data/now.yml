@@ -1,0 +1,13 @@
+# ---------------------------------------------------------------
+# NOW — what you're working on this month. Easiest file to keep fresh.
+# Update the date whenever you change the list; it's shown on the page
+# so a stale "now" is visible rather than quietly misleading.
+# ---------------------------------------------------------------
+
+updated: "August 2026"   # [FILL IN] when you edit the list
+
+items:
+  - "Working through graph algorithms on Codeforces — currently stuck around Div. 2 C."
+  - "Learning the basics of web security: HTTP, common injection classes, and how to read a write-up."
+  - "Starting my 4th semester at IUT."
+  # - "Add a line here."
