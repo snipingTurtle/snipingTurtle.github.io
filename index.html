@@ -1,0 +1,167 @@
+---
+layout: default
+title: home
+---
+
+<!-- ============================================================
+     HERO
+     ============================================================ -->
+<section class="hero">
+  <p class="prompt-line">
+    <span class="prompt-sigil" aria-hidden="true">$</span><span data-typewriter>whoami</span><span class="cursor" aria-hidden="true"></span>
+  </p>
+
+  <div class="hero-body">
+    <div class="avatar" aria-hidden="true">
+      {%- if site.author.photo and site.author.photo != "" -%}
+        <img src="{{ site.author.photo | relative_url }}" alt="">
+      {%- else -%}
+        <span class="avatar-initials">{{ site.author.initials }}</span>
+      {%- endif -%}
+    </div>
+
+    <div>
+      <h1 class="hero-name">{{ site.author.name }}</h1>
+      <p class="hero-role">{{ site.author.role }} · {{ site.author.institution }} · {{ site.author.semester }}</p>
+      <p class="hero-statement">
+        I like problems that push back — the kind you solve twice before you really understand them.
+        <!-- [FILL IN] Swap this for your own one-liner. -->
+      </p>
+    </div>
+  </div>
+
+  {% include contact-links.html style="inline" %}
+</section>
+
+<hr class="rule">
+
+<!-- ============================================================
+     ABOUT
+     ============================================================ -->
+<section id="about" class="section">
+  <h2 class="sec-title"><span class="sec-mark" aria-hidden="true">//</span>about</h2>
+
+  <p class="lede">
+    CSE undergrad at IUT with a growing focus on competitive programming and cybersecurity.
+    I enjoy taking things apart to see why they work, then rebuilding them until they do.
+    <!-- [FILL IN] Replace the second sentence with your own angle. -->
+  </p>
+
+  <p>
+    Most of my time goes to two things: getting faster and more careful at algorithmic problems,
+    and learning enough about how systems break to eventually break a few on purpose.
+    Both are early-stage. I'd rather say that plainly than oversell it.
+    <!-- [FILL IN] Optional second paragraph — cut it if the page reads better short. -->
+  </p>
+</section>
+
+<hr class="rule">
+
+<!-- ============================================================
+     PROJECTS  —  edit _data/projects.yml, not this file
+     ============================================================ -->
+<section id="projects" class="section">
+  <h2 class="sec-title"><span class="sec-mark" aria-hidden="true">//</span>projects</h2>
+  <p class="sec-note">Coursework, contest practice, and things built for their own sake.</p>
+
+  <ul class="cards">
+    {%- for project in site.data.projects %}
+      {% include project-card.html project=project %}
+    {%- endfor %}
+  </ul>
+</section>
+
+<hr class="rule">
+
+<!-- ============================================================
+     COURSEWORK  —  edit _data/coursework.yml
+     ============================================================ -->
+<section id="coursework" class="section">
+  <h2 class="sec-title"><span class="sec-mark" aria-hidden="true">//</span>coursework</h2>
+  <p class="sec-note">What the degree has actually taught me to do so far.</p>
+
+  <dl class="skills">
+    {%- for entry in site.data.coursework %}
+      <div class="skill">
+        <dt>{{ entry.skill }}</dt>
+        <dd>{{ entry.course }}</dd>
+      </div>
+    {%- endfor %}
+  </dl>
+</section>
+
+<hr class="rule">
+
+<!-- ============================================================
+     ACHIEVEMENTS  —  edit _data/achievements.yml
+     ============================================================ -->
+<section id="achievements" class="section">
+  <h2 class="sec-title"><span class="sec-mark" aria-hidden="true">//</span>achievements</h2>
+
+  {%- assign achievement_count = site.data.achievements | size -%}
+  {%- if achievement_count > 0 %}
+    <ul class="achievements">
+      {%- for a in site.data.achievements %}
+        <li class="achievement">
+          <p class="achievement-title">
+            {%- if a.url and a.url != "" -%}
+              <a href="{{ a.url }}" rel="noopener">{{ a.title }}</a>
+            {%- else -%}
+              {{ a.title }}
+            {%- endif -%}
+          </p>
+          <p class="achievement-detail">{{ a.detail }}</p>
+          {%- if a.date %}<p class="achievement-date">{{ a.date }}</p>{% endif %}
+        </li>
+      {%- endfor %}
+    </ul>
+  {%- else %}
+    <p class="empty-state">
+      Nothing to list yet — contests and CTFs are on the calendar, not the record.
+      First entry goes in <code>_data/achievements.yml</code>.
+    </p>
+  {%- endif %}
+</section>
+
+<hr class="rule">
+
+<!-- ============================================================
+     NOTES  —  latest posts from _posts/
+     ============================================================ -->
+<section id="notes" class="section">
+  <h2 class="sec-title"><span class="sec-mark" aria-hidden="true">//</span>notes</h2>
+  <p class="sec-note">Solved problems, security reading, and project post-mortems.</p>
+
+  {%- if site.posts.size > 0 %}
+    <ul class="post-list">
+      {%- for post in site.posts limit: 3 %}
+        <li class="post-item">
+          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+          <time class="post-date" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%d %b %Y" }}</time>
+          <p class="post-excerpt">{{ post.description | default: post.excerpt | strip_html | truncate: 140 }}</p>
+        </li>
+      {%- endfor %}
+    </ul>
+    {%- if site.posts.size > 3 %}
+      <p class="more"><a href="{{ '/notes/' | relative_url }}">all notes <span aria-hidden="true">&rarr;</span></a></p>
+    {%- endif %}
+  {%- else %}
+    <p class="empty-state">No notes yet. Add a Markdown file to <code>_posts/</code> to start.</p>
+  {%- endif %}
+</section>
+
+<hr class="rule">
+
+<!-- ============================================================
+     NOW  —  edit _data/now.yml
+     ============================================================ -->
+<section id="now" class="section">
+  <h2 class="sec-title"><span class="sec-mark" aria-hidden="true">//</span>now</h2>
+  <p class="sec-note">Updated {{ site.data.now.updated }}.</p>
+
+  <ul class="now-list">
+    {%- for item in site.data.now.items %}
+      <li><span class="now-mark" aria-hidden="true">&rsaquo;</span>{{ item }}</li>
+    {%- endfor %}
+  </ul>
+</section>

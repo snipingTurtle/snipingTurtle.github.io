@@ -1,0 +1,63 @@
+# ---------------------------------------------------------------
+# PROJECTS
+# Add a project by appending a block below. Nothing else to touch.
+#
+#   - title:    required
+#     summary:  one line, shown under the title
+#     tags:     any words. cp / security / coursework / personal get
+#               their own accent color (see assets/css/style.css)
+#     year:     optional, shown top-right of the card
+#     links:    optional list; delete the block if there's no link yet
+#     learned:  optional "what I learned" note
+#     placeholder: true  -> renders as an empty "add a project" slot
+# ---------------------------------------------------------------
+
+- title: "CrediFlow"
+  summary: "Credit management and workflow automation system, built as a multi-lab group project (team SAD_I_STICK)."
+  year: "2026"
+  tags: [coursework, systems]
+  details: >
+    Course project for CSE 4408 (System Analysis and Design Lab) at IUT.
+    Covers the full Agile cycle: user stories, MoSCoW prioritization,
+    prototyping, Scrum roles, product backlog, and sprint planning.
+  links:
+    - label: "repo"
+      url: ""          # [FILL IN] — leave empty to hide this link
+    - label: "report"
+      url: ""          # [FILL IN]
+  learned: "How much of software design happens before any code — turning vague stakeholder wants into prioritized, testable user stories."
+
+- title: "JavaFX Wordle"
+  summary: "A Wordle clone in JavaFX with an FXML-based UI and a working game-state controller."
+  year: "2025"
+  tags: [coursework, java]
+  details: >
+    Academic assignment built to strict structural conformity with a base
+    Eclipse project template — the constraint was as much the exercise as
+    the game itself.
+  links:
+    - label: "repo"
+      url: ""          # [FILL IN]
+  learned: "Separating game state from the view. Once the controller stopped knowing about colors, the logic got much easier to test."
+
+- title: "Competitive Programming Archive"
+  summary: "An ongoing collection of solved problems in C++, kept as a public record of practice."
+  year: "ongoing"
+  tags: [cp, personal]
+  details: >
+    Interval scheduling, graph traversal and Dijkstra variants, BFS and
+    ordering problems, plus contest editorials worked through by hand.
+  links:
+    - label: "solutions repo"
+      url: ""          # [FILL IN]
+    - label: "codeforces"
+      url: ""          # [FILL IN]
+  learned: "Re-solving a problem a week later, from scratch, is worth more than reading five editorials."
+
+# --- empty slots ------------------------------------------------
+# Delete one of these each time you add a real project above.
+- placeholder: true
+  hint: "CTF write-up or security tooling"
+
+- placeholder: true
+  hint: "Next project"
