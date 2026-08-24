@@ -12,6 +12,20 @@
 #     placeholder: true  -> renders as an empty "add a project" slot
 # ---------------------------------------------------------------
 
+- title: "Al-Mirath"
+  summary: "A narrative life simulator set across four eras of Islamic history — Umayyad, Abbasid, Mamluk, and Ottoman."
+  year: "ongoing"
+  tags: [coursework, java]
+  details: >
+    You are born into a randomly generated station in life and carry a single character from childhood to their final chronicle. Every decision moves eight personal stats and eight faction standings, sets story flags that later events read back, and steers you toward one of many endings.
+    Built with JavaFX 21 and an embedded SQLite database.
+  links:
+    - label: "repo"
+      url: "https://github.com/snipingTurtle/Al-Mirath"          # [FILL IN]
+  learned: "How to structure a large project with multiple classes and packages, how to use JavaFX for UI design, 
+    and how to integrate a database into a Java application."
+
+
 - title: "JavaFX Wordle"
   summary: "A Wordle clone in JavaFX with an FXML-based UI and a working game-state controller."
   year: "2026"
@@ -51,16 +65,17 @@
 - title: "Hall Management System"
   summary: "A C++ based Hall Management System designed for efficient handling of student complaints and official notice board announcements."
   year: "2025"
-  tags: [cp, personal]
+  tags: [coursework, cpp]
   details: >
-    Interval scheduling, graph traversal and Dijkstra variants, BFS and
-    ordering problems, plus contest editorials worked through by hand.
+    A C++ based Hall Management System designed for efficient handling of
+    student complaints and official notice board announcements. The system
+    allows students to submit complaints, which are then reviewed by the
+    hall authorities. Additionally, the system provides a platform for
+    posting official notices and announcements for the students.
   links:
-    - label: "solutions repo"
-      url: ""          # [FILL IN]
-    - label: "codeforces"
-      url: ""          # [FILL IN]
-  learned: "Re-solving a problem a week later, from scratch, is worth more than reading five editorials." 
+    - label: "repo"
+      url: "https://github.com/snipingTurtle/Disaster-Oriented-Programming"          # [FILL IN]
+  learned: "Understanding the importance of data structures and algorithms in building efficient systems. Learned to implement a complaint management system with proper data handling."
 
 # --- empty slots ------------------------------------------------
 # Delete one of these each time you add a real project above.
