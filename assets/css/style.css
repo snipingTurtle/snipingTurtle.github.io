@@ -410,6 +410,34 @@ p { margin: 0 0 var(--s4); }
   margin-right: 0.6ch;
 }
 
+.card-stats {
+  margin: var(--s4) 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s2) var(--s5);
+  padding: var(--s3) 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+.card-stats dt {
+  font-family: var(--font-mono);
+  font-size: var(--size-xs);
+  color: var(--ink-faint);
+  letter-spacing: 0.02em;
+}
+.card-stats dd {
+  margin: 0;
+  font-family: var(--font-mono);
+  font-size: var(--size-base);
+  color: var(--accent);
+}
+.card-stats-note {
+  margin: var(--s2) 0 0;
+  font-family: var(--font-mono);
+  font-size: var(--size-xs);
+  color: var(--ink-faint);
+}
+
 .card-links {
   margin: var(--s4) 0 0;
   display: flex;

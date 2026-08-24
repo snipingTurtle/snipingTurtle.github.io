@@ -24,6 +24,17 @@
       <p class="card-details">{{ p.details }}</p>
     {%- endif -%}
 
+    {%- if p.stats %}
+      <dl class="card-stats">
+        {%- for s in p.stats %}
+          <div><dt>{{ s.label }}</dt><dd>{{ s.value }}</dd></div>
+        {%- endfor %}
+      </dl>
+      {%- if p.stats_note %}
+        <p class="card-stats-note">{{ p.stats_note }}</p>
+      {%- endif -%}
+    {%- endif -%}
+    
     {%- if p.tags %}
       <ul class="tags">
         {%- for tag in p.tags %}

@@ -2,27 +2,27 @@
 # Site config. GitHub Pages reads this and builds the site for you.
 # ---------------------------------------------------------------
 
-title: "Seiya"
+title: "S. M. Niamul Karim"
 tagline: "CSE undergrad at IUT — competitive programming & cybersecurity"
-description: "Personal site of Seiya, a Computer Science and Engineering undergraduate at Islamic University of Technology. Projects, notes, and competitive programming write-ups."
+description: "Personal site of Niamul, a Computer Science and Engineering undergraduate at Islamic University of Technology. Projects, notes, and competitive programming write-ups."
 
 # URL settings ---------------------------------------------------
 # If the repo is named  <username>.github.io  -> leave baseurl empty.
 # If the repo is named anything else (e.g. "portfolio")
 #   -> set baseurl: "/portfolio"
-url: "https://YOUR_GITHUB_USERNAME.github.io"   # [FILL IN]
+url: "https://snipingturtle.github.io/"   # [FILL IN]
 baseurl: ""
 
 # Identity -------------------------------------------------------
 author:
-  name: "Seiya"
+  name: "S. M. Niamul Karim"
   role: "Computer Science & Engineering undergraduate"
   institution: "Islamic University of Technology (IUT)"
   semester: "4th semester"
-  initials: "S"          # used by the placeholder avatar
+  initials: "N"          # used by the placeholder avatar
   # Swap the initials avatar for a real photo:
   # drop the file in assets/img/ and set the path below, e.g. "/assets/img/me.jpg"
-  photo: ""
+  photo: "/assets/img/me.jpg"
 
 # Build ----------------------------------------------------------
 permalink: /notes/:title/
