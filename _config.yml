@@ -22,7 +22,7 @@ author:
   initials: "N"          # used by the placeholder avatar
   # Swap the initials avatar for a real photo:
   # drop the file in assets/img/ and set the path below, e.g. "/assets/img/me.jpg"
-  photo: "/assets/img/me.jpg"
+  photo: "/assets/img/me.jpeg"
 
 # Build ----------------------------------------------------------
 permalink: /notes/:title/
