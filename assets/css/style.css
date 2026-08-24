@@ -33,12 +33,12 @@
   --font-body: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
               "Helvetica Neue", Arial, sans-serif;
 
-  --size-xs:   0.8125rem;
-  --size-sm:   0.9375rem;
-  --size-base: 1.125rem;
-  --size-md:   1.1875rem;
-  --size-lg:   1.4375rem;
-  --size-xl:   clamp(2rem, 1.4rem + 2.6vw, 2.875rem);
+  --size-xs:   0.75rem;
+  --size-sm:   0.8125rem;
+  --size-base: 1rem;
+  --size-md:   1.0625rem;
+  --size-lg:   1.25rem;
+  --size-xl:   clamp(1.75rem, 1.2rem + 2.4vw, 2.5rem);
 
   --leading-tight: 1.25;
   --leading-body:  1.7;
