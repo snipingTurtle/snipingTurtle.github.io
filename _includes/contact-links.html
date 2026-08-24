@@ -5,7 +5,11 @@
 
 <ul class="links links--{{ include.style | default: 'inline' }}">
   {%- for item in site.data.social -%}
-    {%- if item.url == nil or item.url == "" -%}{%- continue -%}{%- endif -%}
+        {%- if item.url == nil or item.url == "" -%}
+      {%- if item.handle == nil or item.handle == "" -%}{%- continue -%}{%- endif -%}
+      <li><span class="link is-static">{{ item.label }}{% if include.style == "list" %}<span class="link-handle">{{ item.handle }}</span>{% endif %}</span></li>
+      {%- continue -%}
+    {%- endif -%}
 
     {%- assign unfilled = false -%}
     {%- if item.url contains "YOUR_" or item.url contains "FILL" -%}

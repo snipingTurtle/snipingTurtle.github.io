@@ -1,7 +1,7 @@
 /* =============================================================
-   DESIGN SYSTEM
-   Everything visual is controlled from this block. Change a value
-   here and it propagates through the whole site.
+  DESIGN SYSTEM
+  Everything visual is controlled from this block. Change a value
+  here and it propagates through the whole site.
    ============================================================= */
 
 :root {
@@ -12,7 +12,7 @@
   --border-strong: #2c3945;
   --ink:           #dbe3ec;
   --ink-dim:       #93a2b2;
-  --ink-faint:     #5d6b7a;
+  --ink-faint:     #7e8b99;
 
   /* --- accent: amber. Swap this one value to re-skin the site.
          Try #4fd1c5 (cyan) or #7ee081 (terminal green).        */
@@ -29,16 +29,16 @@
 
   /* --- type ------------------------------------------------ */
   --font-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas,
-               "Liberation Mono", "Courier New", monospace;
+              "Liberation Mono", "Courier New", monospace;
   --font-body: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-               "Helvetica Neue", Arial, sans-serif;
+              "Helvetica Neue", Arial, sans-serif;
 
-  --size-xs:   0.75rem;
-  --size-sm:   0.8125rem;
-  --size-base: 1rem;
-  --size-md:   1.0625rem;
-  --size-lg:   1.25rem;
-  --size-xl:   clamp(1.75rem, 1.2rem + 2.4vw, 2.5rem);
+  --size-xs:   0.8125rem;
+  --size-sm:   0.9375rem;
+  --size-base: 1.125rem;
+  --size-md:   1.1875rem;
+  --size-lg:   1.4375rem;
+  --size-xl:   clamp(2rem, 1.4rem + 2.6vw, 2.875rem);
 
   --leading-tight: 1.25;
   --leading-body:  1.7;
@@ -64,7 +64,7 @@
   --border-strong: #d3cec2;
   --ink:           #1a1f26;
   --ink-dim:       #58616c;
-  --ink-faint:     #8a929d;
+  --ink-faint:     #6b7480;
 
   --accent:        #a45a06;
   --accent-wash:   rgba(164, 90, 6, 0.08);
@@ -78,7 +78,7 @@
 }
 
 /* =============================================================
-   BASE
+  BASE
    ============================================================= */
 
 *, *::before, *::after { box-sizing: border-box; }
@@ -141,7 +141,7 @@ p { margin: 0 0 var(--s4); }
 }
 
 /* =============================================================
-   MASTHEAD
+  MASTHEAD
    ============================================================= */
 
 .masthead {
@@ -189,7 +189,7 @@ p { margin: 0 0 var(--s4); }
 [data-theme="light"] .theme-glyph::before { content: "◑"; }
 
 /* =============================================================
-   HERO  —  the terminal prompt is the signature element
+  HERO  —  the terminal prompt is the signature element
    ============================================================= */
 
 .hero { padding-top: var(--s2); }
@@ -262,7 +262,7 @@ p { margin: 0 0 var(--s4); }
 }
 
 /* =============================================================
-   LINKS ROW / LIST
+  LINKS ROW / LIST
    ============================================================= */
 
 .links {
@@ -297,6 +297,7 @@ p { margin: 0 0 var(--s4); }
 .link-handle { color: var(--ink-faint); margin-left: 0.8ch; }
 
 .is-unfilled { color: var(--ink-faint); cursor: help; }
+.is-static { color: var(--ink-dim); }
 .link-note {
   color: var(--accent);
   opacity: 0.65;
@@ -305,7 +306,7 @@ p { margin: 0 0 var(--s4); }
 }
 
 /* =============================================================
-   SECTIONS
+  SECTIONS
    ============================================================= */
 
 .section { scroll-margin-top: var(--s5); }
@@ -340,7 +341,7 @@ p { margin: 0 0 var(--s4); }
 }
 
 /* =============================================================
-   PROJECT CARDS
+  PROJECT CARDS
    ============================================================= */
 
 .cards {
@@ -479,7 +480,7 @@ p { margin: 0 0 var(--s4); }
 }
 
 /* =============================================================
-   TAGS
+  TAGS
    ============================================================= */
 
 .tags {
@@ -514,7 +515,7 @@ p { margin: 0 0 var(--s4); }
 }
 
 /* =============================================================
-   COURSEWORK
+  COURSEWORK
    ============================================================= */
 
 .skills { margin: 0; display: grid; gap: var(--s4); }
@@ -537,7 +538,7 @@ p { margin: 0 0 var(--s4); }
 }
 
 /* =============================================================
-   ACHIEVEMENTS
+  ACHIEVEMENTS
    ============================================================= */
 
 .achievements { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--s4); }
@@ -560,7 +561,7 @@ p { margin: 0 0 var(--s4); }
 }
 
 /* =============================================================
-   NOTES
+  NOTES
    ============================================================= */
 
 .post-list { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--s5); }
@@ -645,7 +646,7 @@ p { margin: 0 0 var(--s4); }
 .prose pre code { background: none; padding: 0; font-size: inherit; }
 
 /* =============================================================
-   NOW
+  NOW
    ============================================================= */
 
 .now-list { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--s3); }
@@ -658,7 +659,7 @@ p { margin: 0 0 var(--s4); }
 }
 
 /* =============================================================
-   FOOTER
+  FOOTER
    ============================================================= */
 
 .footer {
@@ -695,7 +696,7 @@ p { margin: 0 0 var(--s4); }
 .colophon-sep { opacity: 0.5; }
 
 /* =============================================================
-   RESPONSIVE
+  RESPONSIVE
    ============================================================= */
 
 @media (max-width: 34rem) {
@@ -711,7 +712,7 @@ p { margin: 0 0 var(--s4); }
 }
 
 /* =============================================================
-   MOTION
+  MOTION
    ============================================================= */
 
 @media (prefers-reduced-motion: reduce) {
