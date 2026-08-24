@@ -3,6 +3,27 @@
   Everything visual is controlled from this block. Change a value
   here and it propagates through the whole site.
    ============================================================= */
+@font-face {
+  font-family: "Iosevka";
+  src: url("../fonts/Iosevka-Extended-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Iosevka";
+  src: url("../fonts/Iosevka-Extended-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Iosevka";
+  src: url("../fonts/Iosevka-Extended-Italic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
 
 :root {
   /* --- surface & ink (dark, the default) ------------------- */
@@ -28,8 +49,8 @@
   --tag-personal:  #78c9a3;
 
   /* --- type ------------------------------------------------ */
-  --font-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
-  --font-body: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-mono: "Iosevka", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  --font-body: "Iosevka", ui-monospace, monospace;
 
   --size-xs:   0.75rem;
   --size-sm:   0.8125rem;
@@ -51,7 +72,7 @@
   --s7: 3rem;
   --s8: 4.5rem;
 
-  --measure: 44rem;
+  --measure: 52rem;
   --radius:  6px;
 }
 
