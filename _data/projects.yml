@@ -12,24 +12,9 @@
 #     placeholder: true  -> renders as an empty "add a project" slot
 # ---------------------------------------------------------------
 
-- title: "CrediFlow"
-  summary: "Credit management and workflow automation system, built as a multi-lab group project (team SAD_I_STICK)."
-  year: "2026"
-  tags: [coursework, systems]
-  details: >
-    Course project for CSE 4408 (System Analysis and Design Lab) at IUT.
-    Covers the full Agile cycle: user stories, MoSCoW prioritization,
-    prototyping, Scrum roles, product backlog, and sprint planning.
-  links:
-    - label: "repo"
-      url: ""          # [FILL IN] — leave empty to hide this link
-    - label: "report"
-      url: ""          # [FILL IN]
-  learned: "How much of software design happens before any code — turning vague stakeholder wants into prioritized, testable user stories."
-
 - title: "JavaFX Wordle"
   summary: "A Wordle clone in JavaFX with an FXML-based UI and a working game-state controller."
-  year: "2025"
+  year: "2026"
   tags: [coursework, java]
   details: >
     Academic assignment built to strict structural conformity with a base
@@ -41,8 +26,31 @@
   learned: "Separating game state from the view. Once the controller stopped knowing about colors, the logic got much easier to test."
 
 - title: "Competitive Programming Archive"
-  summary: "An ongoing collection of solved problems in C++, kept as a public record of practice."
+  summary: "Two years of solved problems in C++ — 822 and counting, kept as a public record of practice."
   year: "ongoing"
+  tags: [cp, personal]
+  details: >
+    Interval scheduling, graph traversal and Dijkstra variants, BFS and
+    ordering problems, plus contest editorials worked through by hand.
+    Currently Specialist on Codeforces, working toward Expert.
+  stats:
+    - label: "rating"
+      value: "1418 (max 1553)"
+    - label: "solved"
+      value: "822"
+    - label: "last year"
+      value: "409"
+  stats_note: "codeforces, as of Aug 2026"
+  links:
+    - label: "codeforces"
+      url: "https://codeforces.com/profile/OnsiteCurse"
+    - label: "solutions repo"
+      url: ""          # [FILL IN]
+  learned: "Re-solving a problem a week later, from scratch, is worth more than reading five editorials."
+
+- title: "Hall Management System"
+  summary: "A C++ based Hall Management System designed for efficient handling of student complaints and official notice board announcements."
+  year: "2025"
   tags: [cp, personal]
   details: >
     Interval scheduling, graph traversal and Dijkstra variants, BFS and
@@ -52,7 +60,7 @@
       url: ""          # [FILL IN]
     - label: "codeforces"
       url: ""          # [FILL IN]
-  learned: "Re-solving a problem a week later, from scratch, is worth more than reading five editorials."
+  learned: "Re-solving a problem a week later, from scratch, is worth more than reading five editorials." 
 
 # --- empty slots ------------------------------------------------
 # Delete one of these each time you add a real project above.

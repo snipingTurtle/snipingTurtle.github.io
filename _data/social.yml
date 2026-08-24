@@ -11,21 +11,21 @@
 # ---------------------------------------------------------------
 
 - label: "email"
-  url: "mailto:[YOUR_EMAIL_HERE]"
-  handle: "[YOUR_EMAIL_HERE]"
+  url: "mailto: niamulkarim03@gmail.com"
+  handle: "S. M. Niamul Karim"
 
 - label: "github"
-  url: "[YOUR_GITHUB_URL_HERE]"
-  handle: "[YOUR_GITHUB_HANDLE]"
+  url: "https://github.com/snipingTurtle"
+  handle: "snipingTurtle"
 
 - label: "linkedin"
-  url: "[YOUR_LINKEDIN_URL_HERE]"
-  handle: "[YOUR_NAME]"
+  url: "www.linkedin.com/in/niamul-karim-ba1216364"
+  handle: "S. M. Niamul Karim"
 
 # --- optional. Leave url empty to hide. ---
 - label: "codeforces"
-  url: ""
-  handle: ""
+  url: "https://codeforces.com/profile/OnsiteCurse"
+  handle: "OnsiteCurse"
 
 - label: "leetcode"
   url: ""
@@ -37,4 +37,4 @@
 
 - label: "discord"
   url: ""
-  handle: ""
+  handle: "seiyazin_"

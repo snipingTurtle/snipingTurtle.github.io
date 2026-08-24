@@ -10,3 +10,28 @@
 # ---------------------------------------------------------------
 
 # [FILL IN] — nothing confirmed yet. Add entries below.
+- title: "4th place — Intra University Junior Programming Contest 2025 - IUT"
+  detail: "Top five finish in a contest among IUT first year students."
+  date: "May 2025"
+  url: ""
+
+- title: "4th place — IUT Eid Salami Programming Contest 2026"
+  detail: "A friendly contest among IUT students celebrating Eid."
+  date: "March 2026"
+  url: "https://codeforces.com/spectator/ranklist/2529829a3a9c0cf7484e6954cac3bfec?fbclid=IwY2xjawT5RVBwZG9mBWV4dG4DYWVtAjEwAGJyaWQRMTROUHVCSWVwdVBEc1d0U1VzcnRjBmFwcF9pZBAyMjIwMzkxNzg4MjAwODkyAAEeBsi5B841tHpUzRhYqryA4NxUTYmzRMyptesUTMbBHmHHs98ew_driw-b_Lo_aem_j6Vu-78H3VHR5j47uru_dw"
+
+- title: "4th place — SeriousOJ CodeCombat Replay Round 2026"
+  detail: "Top-five finish in a Div. 3-difficulty round: 10 problems, 2.5 hours."
+  date: "April 2026"
+  url: "https://codeforces.com/blog/entry/153026"
+
+- title: "16th place — IUT 12th ICT Fest Inter University Programming Contest 2026"
+  detail: "A national level contest among university students in Bangladesh. 16th place out of 100+ teams."
+  team: "IUT_HammerTime"
+  date: "July 2026"
+  url: "https://toph.co/c/iut-inter-university-2026/standings"
+
+- title: "Codeforces Specialist"
+  detail: "Peak rating 1553. 822 problems solved across two years, 409 of them in the last twelve months."
+  date: "as of Aug 2026"
+  url: "https://codeforces.com/profile/OnsiteCurse"
