@@ -6,21 +6,17 @@ tags: [personal, cp]
 description: "A first post to set the pattern: short write-ups of problems I solved, things I broke, and what I'd do differently."
 ---
 
-I kept losing the same twenty minutes. I'd hit a problem, work out the trick, close the tab —
-and two weeks later hit something close enough that I should have recognised it, and didn't.
-
-So this is the fix: a short note every time something takes me longer than it should have.
-Not tutorials. Just the shape of the problem, the thing I missed, and what I'd look for next time.
+AI gave me this idea, will keep notes of a problem i am currently solving or am unable to solve, keep what i found, so when i come back later, i can start right from where i left
 
 ## The format
 
 Each note tries to answer three questions:
 
-1. **What was actually being asked?** Usually the hard part. Contest statements hide a
-   standard problem behind a story.
-2. **What did I try first, and why was it wrong?** The wrong turn is the useful part —
-   it's the reflex I need to retrain.
-3. **What's the one-line takeaway?** If I can't compress it to a line, I don't understand it yet.
+1. **What was actually being asked?**.
+2. **What did I try first, and why was it wrong?**.
+3. **What's the one-line takeaway?**.
+
+The following example is AI generated, keeping it for future reference.
 
 ## An example
 
